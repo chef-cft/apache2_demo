@@ -8,6 +8,7 @@ version '0.1.0'
 chef_version '>= 13.0' if respond_to?(:chef_version)
 
 depends 'apache2', '>= 5.2.0'
+depends 'os-hardening'
 
 supports 'debian'
 supports 'ubuntu'

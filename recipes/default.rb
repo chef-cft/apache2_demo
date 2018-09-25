@@ -19,6 +19,7 @@
 
 apt_update 'update'
 include_recipe 'apache2::default'
+include_recipe 'os-hardening::default'
 
 app_dir = "#{node['apache']['docroot_dir']}/basic_web_app"
 
